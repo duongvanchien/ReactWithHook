@@ -32,6 +32,7 @@ function App() {
   // }
 
   const [posts, setPosts] = useState([]);
+  const [statusClock, setStatusClock] = useState(true);
 
   useEffect(() => {
     async function fetchPostList() {
@@ -55,8 +56,10 @@ function App() {
       <Todolist
         todos={jobs}
         onTodoClick={onTodoClick}
-      ></Todolist> */}
-      <PostList posts={posts} />
+      ></Todolist>
+      <PostList posts={posts} /> */}
+      {statusClock && <Clock />}
+      <button onClick={() => setStatusClock(false)}>Hide Clock</button>
     </div>
   );
 }
