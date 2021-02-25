@@ -59,7 +59,7 @@ function App() {
       ></Todolist>
       <PostList posts={posts} /> */}
       {statusClock && <Clock />}
-      <button onClick={() => setStatusClock(false)}>Hide Clock</button>
+      <button onClick={() => setStatusClock(false)}>Ẩn đồng hồ</button>
     </div>
   );
 }

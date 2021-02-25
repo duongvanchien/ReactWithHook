@@ -8,7 +8,7 @@ function formatTime(time) {
 }
 
 function Clock() {
-  const [time, setTime] = useState("");
+  const [date, setTime] = useState("");
   
   useEffect(() => {
     const timeInterval = setInterval(() => {
@@ -25,7 +25,7 @@ function Clock() {
 
   return (
     <div>
-      <h1>{time}</h1>
+      <h1>{date}</h1>
     </div>
   );
 }
