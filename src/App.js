@@ -3,6 +3,7 @@ import "./App.scss";
 import Todolist from "./Components/Todolist/index";
 import TodoForm from "./Components/TodoForm/index";
 import PostList from "./Components/PostList/index";
+import Clock from "./Components/Clock/index";
 
 function App() {
   // const [jobs, setJobs] = useState([
