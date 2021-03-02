@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "./BetterClock.scss";
 import useClock from "../../hooks/useClock";
 
 Clock.propTypes = {};
@@ -7,8 +8,8 @@ function Clock() {
   const { date } = useClock();
 
   return (
-    <div className="better-clock">
-      <p className="better-clock__time">{date}</p>
+    <div>
+      <h1>{date}</h1>
     </div>
   );
 }

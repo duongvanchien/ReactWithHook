@@ -4,6 +4,7 @@ import Todolist from "./Components/Todolist/index";
 import TodoForm from "./Components/TodoForm/index";
 import PostList from "./Components/PostList/index";
 import Clock from "./Components/Clock/index";
+import BetterClock from "./Components/BetterClock/index";
 
 function App() {
   // const [jobs, setJobs] = useState([
@@ -59,7 +60,8 @@ function App() {
       ></Todolist>
       <PostList posts={posts} /> */}
       {statusClock && <Clock />}
-      <button onClick={() => setStatusClock(false)}>Ẩn đồng hồ</button>
+      {/* <button onClick={() => setStatusClock(false)}>Ẩn đồng hồ</button> */}
+      <BetterClock />
     </div>
   );
 }
