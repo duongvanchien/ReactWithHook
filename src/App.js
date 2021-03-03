@@ -5,6 +5,9 @@ import TodoForm from "./Components/TodoForm/index";
 import PostList from "./Components/PostList/index";
 import Clock from "./Components/Clock/index";
 import BetterClock from "./Components/BetterClock/index";
+import MagicColor from "./Components/MagicColor/index";
+
+import ReactMemo from "./Test/ReactMemo/index";
 
 function App() {
   // const [jobs, setJobs] = useState([
@@ -35,6 +38,8 @@ function App() {
   const [posts, setPosts] = useState([]);
   const [statusClock, setStatusClock] = useState(true);
 
+  const [count, setCount] = useState(0);
+
   useEffect(() => {
     async function fetchPostList() {
       try {
@@ -59,9 +64,14 @@ function App() {
         onTodoClick={onTodoClick}
       ></Todolist>
       <PostList posts={posts} /> */}
-      {statusClock && <Clock />}
+      {/* {statusClock && <Clock />} */}
       {/* <button onClick={() => setStatusClock(false)}>Ẩn đồng hồ</button> */}
-      <BetterClock />
+      {/* <BetterClock /> */}
+
+      {/* <MagicColor /> */}
+      <p>{count}</p>
+      <button onClick={() => setCount(count + 1)}>Tăng</button>
+      <ReactMemo name="Dương Văn Chiến" />
     </div>
   );
 }
